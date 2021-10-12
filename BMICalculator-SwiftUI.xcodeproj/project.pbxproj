@@ -11,6 +11,7 @@
 		DB227AF92715B69600F015DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB227AF82715B69600F015DA /* ContentView.swift */; };
 		DB227AFB2715B69800F015DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB227AFA2715B69800F015DA /* Assets.xcassets */; };
 		DB227AFE2715B69800F015DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB227AFD2715B69800F015DA /* Preview Assets.xcassets */; };
+		DB227B052715BB6300F015DA /* BMICalculatorLS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB227B042715BB6300F015DA /* BMICalculatorLS.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DB227AF82715B69600F015DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB227AFA2715B69800F015DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB227AFD2715B69800F015DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB227B042715BB6300F015DA /* BMICalculatorLS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BMICalculatorLS.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				DB227AF62715B69600F015DA /* BMICalculator_SwiftUIApp.swift */,
 				DB227AF82715B69600F015DA /* ContentView.swift */,
 				DB227AFA2715B69800F015DA /* Assets.xcassets */,
+				DB227B042715BB6300F015DA /* BMICalculatorLS.storyboard */,
 				DB227AFC2715B69800F015DA /* Preview Content */,
 			);
 			path = "BMICalculator-SwiftUI";
@@ -127,6 +130,7 @@
 			files = (
 				DB227AFE2715B69800F015DA /* Preview Assets.xcassets in Resources */,
 				DB227AFB2715B69800F015DA /* Assets.xcassets in Resources */,
+				DB227B052715BB6300F015DA /* BMICalculatorLS.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +279,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = BMICalculatorLS;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -305,6 +311,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = BMICalculatorLS;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
