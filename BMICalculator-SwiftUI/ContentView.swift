@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State private var height = 0.0
     @State private var weight = 0.0
+    @State private var showModal = false
     
     var body: some View {
         ZStack {
@@ -27,6 +28,7 @@ struct ContentView: View {
                 Text("\(String(format: "%.0f", weight)) kg")
                 Slider(value: $weight, in: 20...130)
                 Button {
+                    showModal = true
                     print(height, weight)
                 } label: {
                     Text("CALCULATE")
@@ -37,7 +39,9 @@ struct ContentView: View {
                 .background(Color("BMIPurple"))
                 .foregroundColor(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
-
+                .sheet(isPresented: $showModal, onDismiss: nil) {
+                    ResultsView(height: height, weight: weight, isPresented: $showModal)
+                }
             }
             .padding(.horizontal, 15.0)
             .padding(.bottom, 40)

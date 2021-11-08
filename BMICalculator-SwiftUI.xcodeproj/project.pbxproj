@@ -12,6 +12,7 @@
 		DB227AFB2715B69800F015DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB227AFA2715B69800F015DA /* Assets.xcassets */; };
 		DB227AFE2715B69800F015DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB227AFD2715B69800F015DA /* Preview Assets.xcassets */; };
 		DB227B052715BB6300F015DA /* BMICalculatorLS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB227B042715BB6300F015DA /* BMICalculatorLS.storyboard */; };
+		DBD09D7C2739723400A9D994 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD09D7B2739723400A9D994 /* ResultsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		DB227AFA2715B69800F015DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB227AFD2715B69800F015DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB227B042715BB6300F015DA /* BMICalculatorLS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BMICalculatorLS.storyboard; sourceTree = "<group>"; };
+		DBD09D7B2739723400A9D994 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				DB227AF62715B69600F015DA /* BMICalculator_SwiftUIApp.swift */,
 				DB227AF82715B69600F015DA /* ContentView.swift */,
+				DBD09D7B2739723400A9D994 /* ResultsView.swift */,
 				DB227AFA2715B69800F015DA /* Assets.xcassets */,
 				DB227B042715BB6300F015DA /* BMICalculatorLS.storyboard */,
 				DB227AFC2715B69800F015DA /* Preview Content */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB227AF92715B69600F015DA /* ContentView.swift in Sources */,
+				DBD09D7C2739723400A9D994 /* ResultsView.swift in Sources */,
 				DB227AF72715B69600F015DA /* BMICalculator_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
