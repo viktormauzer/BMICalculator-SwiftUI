@@ -13,6 +13,8 @@ struct ContentView: View {
     @State private var weight = 0.0
     @State private var showModal = false
     
+    @ObservedObject var calculatorBrain = CalculatorBrain()
+    
     var body: some View {
         ZStack {
             Image("BMICalculatorBG")
@@ -23,24 +25,19 @@ struct ContentView: View {
                 .offset(y: -50)
             VStack {
                 Spacer()
+                
                 Text("\(String(format: "%.0f", height)) cm")
                 Slider(value: $height, in: 60...250)
+                
                 Text("\(String(format: "%.0f", weight)) kg")
                 Slider(value: $weight, in: 20...130)
-                Button {
+                
+                BMIButton(buttonText: "CALCULATE", buttonColor: "BMIPurple") {
+                    calculatorBrain.calculateBMI(height, weight)
                     showModal = true
-                    print(height, weight)
-                } label: {
-                    Text("CALCULATE")
-                        .font(.system(size: 18, weight: .semibold, design: .default))
                 }
-                .frame(maxWidth: .infinity)
-                .frame(height: 50)
-                .background(Color("BMIPurple"))
-                .foregroundColor(.white)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
                 .sheet(isPresented: $showModal, onDismiss: nil) {
-                    ResultsView(height: height, weight: weight, isPresented: $showModal)
+                    ResultsView(bmi: calculatorBrain.bmi, isPresented: $showModal)
                 }
             }
             .padding(.horizontal, 15.0)
