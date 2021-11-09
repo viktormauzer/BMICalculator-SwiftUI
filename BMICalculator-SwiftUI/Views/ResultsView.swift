@@ -22,8 +22,10 @@ struct ResultsView: View {
                 Spacer()
                 Text("Your BMI is:")
                     .font(.system(size: 18, weight: .light, design: .default))
+                    .foregroundColor(.black)
                 Text("\(String(format: "%.1f", bmi))")
                     .font(.system(size: 68, weight: .heavy, design: .default))
+                    .foregroundColor(.black)
                 
                 Spacer()
                 

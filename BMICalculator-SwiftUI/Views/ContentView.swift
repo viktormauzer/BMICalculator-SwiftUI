@@ -26,6 +26,7 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 
+                
                 SliderWithLabel(value: $height, unit: "cm", range: 50...230)
                 SliderWithLabel(value: $weight, unit: "kg", range: 20...150)
                 
