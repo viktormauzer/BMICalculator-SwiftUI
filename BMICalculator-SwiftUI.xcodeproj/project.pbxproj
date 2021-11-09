@@ -12,6 +12,7 @@
 		DB227AFB2715B69800F015DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB227AFA2715B69800F015DA /* Assets.xcassets */; };
 		DB227AFE2715B69800F015DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB227AFD2715B69800F015DA /* Preview Assets.xcassets */; };
 		DB227B052715BB6300F015DA /* BMICalculatorLS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB227B042715BB6300F015DA /* BMICalculatorLS.storyboard */; };
+		DB81E120273AC268003EB2CF /* SliderWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81E11F273AC268003EB2CF /* SliderWithLabel.swift */; };
 		DBD09D7C2739723400A9D994 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD09D7B2739723400A9D994 /* ResultsView.swift */; };
 		DBD09D7F27397CF400A9D994 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD09D7E27397CF400A9D994 /* CalculatorBrain.swift */; };
 		DBD09D82273981CD00A9D994 /* BMIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD09D81273981CD00A9D994 /* BMIButton.swift */; };
@@ -24,6 +25,7 @@
 		DB227AFA2715B69800F015DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB227AFD2715B69800F015DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB227B042715BB6300F015DA /* BMICalculatorLS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BMICalculatorLS.storyboard; sourceTree = "<group>"; };
+		DB81E11F273AC268003EB2CF /* SliderWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderWithLabel.swift; sourceTree = "<group>"; };
 		DBD09D7B2739723400A9D994 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		DBD09D7E27397CF400A9D994 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		DBD09D81273981CD00A9D994 /* BMIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIButton.swift; sourceTree = "<group>"; };
@@ -79,12 +81,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DB81E121273AC8FD003EB2CF /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				DBD09D81273981CD00A9D994 /* BMIButton.swift */,
+				DB81E11F273AC268003EB2CF /* SliderWithLabel.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
 		DBD09D7D27397C2900A9D994 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				DB227AF82715B69600F015DA /* ContentView.swift */,
-				DBD09D81273981CD00A9D994 /* BMIButton.swift */,
 				DBD09D7B2739723400A9D994 /* ResultsView.swift */,
+				DB81E121273AC8FD003EB2CF /* HelperViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +184,7 @@
 				DBD09D7F27397CF400A9D994 /* CalculatorBrain.swift in Sources */,
 				DB227AF72715B69600F015DA /* BMICalculator_SwiftUIApp.swift in Sources */,
 				DBD09D82273981CD00A9D994 /* BMIButton.swift in Sources */,
+				DB81E120273AC268003EB2CF /* SliderWithLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

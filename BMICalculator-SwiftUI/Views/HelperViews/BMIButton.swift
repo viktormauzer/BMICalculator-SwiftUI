@@ -14,15 +14,18 @@ struct BMIButton: View {
     let action: () -> Void
     
     var body: some View {
-        Button(action: {action()}) {
+        
+        Button {
+            action()
+        } label: {
             Text("\(buttonText)")
                 .font(.system(size: 18, weight: .semibold, design: .default))
+                .frame(maxWidth: .infinity)
+                .frame(height: 50)
+                .background(Color(buttonColor))
+                .foregroundColor(.white)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
         }
-        .frame(maxWidth: .infinity)
-        .frame(height: 50)
-        .background(Color(buttonColor))
-        .foregroundColor(.white)
-        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
 

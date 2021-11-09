@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var height = 0.0
-    @State private var weight = 0.0
+    @State private var height = 140.0
+    @State private var weight = 85.0
     @State private var showModal = false
     
     @ObservedObject var calculatorBrain = CalculatorBrain()
@@ -26,11 +26,8 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 
-                Text("\(String(format: "%.0f", height)) cm")
-                Slider(value: $height, in: 60...250)
-                
-                Text("\(String(format: "%.0f", weight)) kg")
-                Slider(value: $weight, in: 20...130)
+                SliderWithLabel(value: $height, unit: "cm", range: 50...230)
+                SliderWithLabel(value: $weight, unit: "kg", range: 20...150)
                 
                 BMIButton(buttonText: "CALCULATE", buttonColor: "BMIPurple") {
                     calculatorBrain.calculateBMI(height, weight)
