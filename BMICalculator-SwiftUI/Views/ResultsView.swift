@@ -22,10 +22,8 @@ struct ResultsView: View {
                 Spacer()
                 Text("Your BMI is:")
                     .font(.system(size: 18, weight: .light, design: .default))
-                    .foregroundColor(.black)
                 Text("\(String(format: "%.1f", bmi))")
                     .font(.system(size: 68, weight: .heavy, design: .default))
-                    .foregroundColor(.black)
                 
                 Spacer()
                 
@@ -41,5 +39,6 @@ struct ResultsView: View {
 struct ResultsView_Previews: PreviewProvider {
     static var previews: some View {
         ResultsView(bmi: 25.0, isPresented: .constant(true))
+            .preferredColorScheme(.dark)
     }
 }
