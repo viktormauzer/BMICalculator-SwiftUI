@@ -15,7 +15,7 @@ struct SliderWithLabel: View {
     
     var body: some View {
         VStack {
-            Text("\(String(format: "%.0f", value)) \(unit)")
+            Text("\(String(format: "%.1f", value)) \(unit)")
             Slider(value: $value, in: range)
                 .accentColor(Color("BMIPink"))
         }
